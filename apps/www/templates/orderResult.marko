@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!--
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+		-->
+		<title>Order Result | HQ - Backend Assignment - Braintree + Paypal IPG</title>
+		<link rel="stylesheet" href="https://yui-s.yahooapis.com/pure/0.6.0/pure-min.css">
+	</head>
+	<body style="margin: 25px 25px">
+
+		<div align="center">
+			<if(data.status === 1)> <!-- order status 1 : success -->
+				<h1>Order Result : Success</h1>
+				<p>Thank You for your order. The order has been successfully paid using credit card. Detail as the following :</p>
+			</if>
+			<else>
+				<h1>Order Result : Fail</h1>
+				<p>Thank You for your order. We are sorry, we cannot process your credit card payment. Detail as the following :</p>
+			</else>
+				<div>
+					<if(data.transactionId !== null)>
+						<span>Transaction Id : ${data.transactionId}</span><br>
+					</if>
+					<span>Order number : ${data.orderNumber}</span><br>
+					<span>Currency : ${data.clientData.currency}</span><br>
+					<span>Price : ${data.clientData.price}</span><br>
+					<span>Customer Name : ${data.clientData.custName}</span><br>
+					<span>Card Holder Name : ${data.clientData.ccHolderName}</span><br>
+					<span>Card Number : ${data.clientData.ccNumber}</span><br>
+					<span>Card Expiry Month : ${data.clientData.ccExpMonth}</span><br>
+					<span>Card Expiry Year : ${data.clientData.ccExpYear}</span><br>
+					<span>Card CVV : ${data.clientData.ccCVV}</span><br>
+				</div>
+			<if(data.errMsg !== '')>
+				<div>
+					<p><b>Erorr Message : ${data.errMsg}</b></p>
+				</div>
+			</if>
+			<div>
+				Payment Gateway by : ${data.paymentGW}
+			</div>
+		</div>
+	</body>
+</html>

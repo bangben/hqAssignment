@@ -1,0 +1,55 @@
+{
+  "development": {
+    "username": "root",
+    "password": "1234",
+    "database": "hqAssignment",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "port": "3306",
+    "engine": "InnoDB",
+    "timezone": "+08:00",
+    "pool": {
+      "max": "5",
+      "min": "0",
+      "idle": "10000"
+    },
+    "benchmark":"true"
+
+  },
+  "test": {
+    "username": "root",
+    "password": "1234",
+    "database": "lbit",
+    "host": "localhost",
+    "dialect": "mysql",
+    "port": "3306",
+    "engine": "InnoDB",
+    "pool.maxConnections": "1"
+  },
+  "production": {
+    "username": "root",
+    "password": "prodPwd",
+    "database": "prodDb",
+    "host": "localhost",
+    "dialect": "mysql",
+    "port": "3306",
+    "engine": "InnoDB",
+    "pool.maxConnections": "1"
+  },
+  "sequelize":{
+    "dropTable": true
+  },
+  "paypal":{
+    "mode": "sandbox",
+    "clientId": "AaFHu21CdpG84jlHlvEeccZtZjF5y1VY-DP5BRiBNvMy4tQlSvIIrZiAWewJftaklvTNWGcXS4wG1IDH",
+    "secret": "EK1yXdeTlmndjkOaHn0eBLSDTlbYnJHkcWUnREWxQnz2zHOwh8VJtxvheB_1ZSD3eYBIIdAT0yYKTO9w",
+    "gwName": "Paypal"
+  },
+  "braintree":{
+    "merchantId": "8jbxchk4h3k3wcdk",
+    "publicKey": "npck2j437x5hcw54",
+    "privateKey": "32670cd4dcb5fc0b5585ec5b4ba1d248",
+    "submitForSettlement": "true",
+    "gwName": "Braintree"
+  }
+}
