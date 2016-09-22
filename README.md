@@ -6,14 +6,17 @@ HQ Assignment Node JS Backend
 3. Run npm start
 
 ### IMPORTANT !! ###
-Populate currency table and orderResult table first !! Use the following URL
-open your browser : http://127.0.0.1:3002/admin/populateDB
+Populate currency table and orderResult table first!! Open the following URL
+on your browser : http://127.0.0.1:3002/admin/populateDB
 
 Then open URL : http://127.0.0.1:3002/
 
+
 If you restarted the server, 
-please open http://127.0.0.1:3002/admin/populateDB first. 
+Make sure you  open http://127.0.0.1:3002/admin/populateDB first. 
 Then open http://127.0.0.1:3002/
+
+There is a config.json file (/config/config.json). Here you can set DB details, paypal config, braintree config.
 
 
 Todo : 
