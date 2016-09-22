@@ -4,6 +4,7 @@
   "description": "",
   "main": "koa-app.js",
   "scripts": {
+    "start": "node koa-app.js",
     "test": "./node_modules/.bin/mocha -R spec -b"
   },
   "author": "Benyamin D Yonathan",
