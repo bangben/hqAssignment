@@ -1,7 +1,7 @@
 {
   "name": "hq-backend-assignment",
   "version": "1.0.0",
-  "description": "",
+  "description": "HQ Assigment. 3rd party IPG lib integration",
   "main": "koa-app.js",
   "scripts": {
     "start": "node koa-app.js",
@@ -10,13 +10,11 @@
   "author": "Benyamin D Yonathan",
   "license": "ISC",
   "devDependencies": {
-    "co": "^4.6.0",
     "mocha": "^3.0.2",
     "should": "^10.0.0",
     "supertest": "^1.2.0"
   },
   "dependencies": {
-    "bcrypt": "^0.8.7",
     "bluebird": "^3.4.1",
     "braintree": "^1.41.0",
     "koa": "^1.2.1",
