@@ -17,7 +17,7 @@ Then open http://127.0.0.1:3002/
 
 
 Todo : 
-- Finish paypal gateway. Problem : paypal sandbox API always return "internal server error" response. I can't check and test the response object and its property.
+- Finish paypal integration. Problem : paypal sandbox API always return "internal server error" response. I can't check and test the response object and its property.
 - Write unit test(s)
 
 Braintree :
