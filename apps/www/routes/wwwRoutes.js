@@ -9,7 +9,7 @@ const www = globReq('apps/www/handlers/www.js');
 var koaBody = require('koa-body');
 
 
-router.get('/orderIPG', www.orderIPG);
+router.get('/', www.orderIPG);
 router.post('/orderIPG', koaBody(),  www.doPlaceOrderIPG);
 
 

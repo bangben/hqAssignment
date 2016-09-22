@@ -41,8 +41,8 @@
   },
   "paypal":{
     "mode": "sandbox",
-    "clientId": "AaFHu21CdpG84jlHlvEeccZtZjF5y1VY-DP5BRiBNvMy4tQlSvIIrZiAWewJftaklvTNWGcXS4wG1IDH",
-    "secret": "EK1yXdeTlmndjkOaHn0eBLSDTlbYnJHkcWUnREWxQnz2zHOwh8VJtxvheB_1ZSD3eYBIIdAT0yYKTO9w",
+    "clientId": "YOUR-PAYPAL-CLIENTID",
+    "secret": "YOUR-PAYPAL-SECRET",
     "gwName": "Paypal"
   },
   "braintree":{
