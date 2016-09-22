@@ -24,7 +24,7 @@ Braintree :
 For testing, please use credit card number and amount here : 
 https://developers.braintreepayments.com/reference/general/testing/node
 
-Done =)
+=)
 
 
 
