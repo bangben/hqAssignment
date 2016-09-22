@@ -20,22 +20,7 @@ module.exports = function(sequelize, DataTypes) {
 	}, {
 		classMethods: {
 			associate: function(models) {
-				//User.hasMany(models.Lb);
-				//User.hasMany(models.LbPengadaan);
-				//Category.hasMany(models.category, {as: 'subCategory', foreignKey: 'parentId'});
-				
-				//Cart.belongsTo(models.carrier);
-
-				//Category.belongsTo(models.category, {as: 'child', foreignKey: 'parentId'});
-				//Cart.belongsToMany(models.product, { through: 'cartProduct' });
 				OrderStatus.hasMany(models.order);
-				/*Order.belongsTo(models.cart);
-				Order.belongsTo(models.customer);
-				Order.belongsTo(models.caraBayar);
-				Order.belongsTo(models.statusOrder);
-				Order.belongsTo(models.carrier);
-				Order.belongsTo(models.voucher);
-				*/
 			}
 		},
 		comment: "Table OrderStatus"

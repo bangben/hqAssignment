@@ -1,14 +1,10 @@
 'use strict';
 //Node global :
-global.ojoReq = function(p) {
-    return require(__dirname + '/' + p);
-};
 
 global.globReq = function(p) {
     return require(__dirname + '/' + p);
 };
 
-global.ojoRootPath = __dirname + '/';
 global.globRootPath = __dirname + '/';
 
 
